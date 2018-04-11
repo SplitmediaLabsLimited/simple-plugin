@@ -54,7 +54,7 @@ label {
   color: #888;
   background-color: #080808;
   border: 1px solid #888;
-  z-index: 3;
+  z-index: 10;
 }
 
 #lock + .generaltooltip .generalinfo {
@@ -84,7 +84,14 @@ label {
   padding: 0;
 }
 
-.generalinfo span,
+.generalinfo span{
+  position: relative;
+  top: 10px;
+  left: 5px;
+  display: inline-block;
+  padding-right: 5px;
+  z-index: 99;
+}
 .keyInfo span {
   position: relative;
   top: 10px;
@@ -133,6 +140,7 @@ label {
 .generalinfo:hover + .general {
   background-color: #0098d4;
   cursor: pointer;
+  z-index: 100;
 }
 
 .keyInfo:hover, .generalinfo:hover {
