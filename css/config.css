@@ -44,7 +44,7 @@ label {
 
 .generalinfo {
   width: 180px;
-  height: 110px;
+  height: auto;
   position: absolute;
   display: none;
   left: 0;
@@ -58,7 +58,7 @@ label {
 }
 
 #lock + .generaltooltip .generalinfo {
-  height: 155px;
+  height: auto;
   top: -127px;
   left: -100px;
 }
@@ -153,6 +153,7 @@ label {
 
 .generaltooltip:hover .generalinfo {
   display: block;
+  padding-bottom: 15px;
 }
 
 .tooltipcont {
@@ -174,7 +175,7 @@ label {
 
 .elementcontainer {
   width: 50%;
-  height: 165px;
+  height: auto;
   display: block;
   position: relative;
 }
@@ -249,4 +250,17 @@ xui-colorpicker /deep/ #colorPicker div#paletteContainer
 xui-checkbox /deep/ label
 {
   cursor: pointer;
+}
+
+.text-left {
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+.text-justify{
+  text-align: justify;
 }
