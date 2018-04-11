@@ -1,0 +1,19 @@
+html,body{
+	color: #fff;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+
+#container{
+	display: flex;
+	width: 100%;
+	height:100%;
+}
+
+#myText{
+	margin:auto;
+	color:#fff;
+	font-size: 35px;
+}
